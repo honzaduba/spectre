@@ -1,6 +1,7 @@
 .idea/
 node_modules/
 .*
+*.bak
 !.csscomb.json
 !.gitignore
 !.gitattributes

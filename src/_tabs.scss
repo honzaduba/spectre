@@ -20,12 +20,18 @@
       &:focus,
       &:hover {
         color: $link-color;
+        background-color: $secondary-color-light;
       }
     }
     &.active a,
     a.active {
       border-bottom-color: $primary-color;
       color: $link-color;
+      background-color: $secondary-color;
+    }
+    &.active a:hover,
+    a.active:hover {
+      background-color: $secondary-color-dark;
     }
 
     &.tab-action {

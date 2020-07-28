@@ -1,5 +1,6 @@
 // Calendars
 .calendar {
+  background: $bg-color;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
   display: block;
@@ -7,7 +8,7 @@
 
   .calendar-nav {
     align-items: center;
-    background: $bg-color;
+    //background: $bg-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     display: flex;
@@ -29,7 +30,7 @@
   }
 
   .calendar-header {
-    background: $bg-color;
+    //background: $bg-color;
     border-bottom: $border-width solid $border-color;
     color: $gray-color;
     font-size: $font-size-sm;

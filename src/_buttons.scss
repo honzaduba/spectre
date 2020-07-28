@@ -1,10 +1,10 @@
 // Buttons
 .btn {
   appearance: none;
-  background: $bg-color-light;
-  border: $border-width solid $primary-color;
+  background: $bg-color-light; //$secondary-color; //$bg-color-light;
+  border: $border-width solid $border-color; // $border-width solid $primary-color;
   border-radius: $border-radius;
-  color: $primary-color;
+  color: $dark-color; // $primary-color
   cursor: pointer;
   display: inline-block;
   font-size: $font-size;
@@ -14,7 +14,7 @@
   padding: $control-padding-y $control-padding-x;
   text-align: center;
   text-decoration: none;
-  transition: background .2s, border .2s, box-shadow .2s, color .2s;
+  transition: background 0.2s, border 0.2s, box-shadow 0.2s, color 0.2s;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -23,7 +23,7 @@
   }
   &:focus,
   &:hover {
-    background: $secondary-color;
+    background: $secondary-color-light; // $secondary-color
     border-color: $primary-color-dark;
     text-decoration: none;
   }
@@ -44,7 +44,7 @@
   &:disabled,
   &.disabled {
     cursor: default;
-    opacity: .5;
+    opacity: 0.5;
     pointer-events: none;
   }
 
@@ -78,6 +78,10 @@
     @include button-variant($success-color);
   }
 
+  &.btn-warning {
+    @include button-variant($warning-color);
+  }
+
   &.btn-error {
     @include button-variant($error-color);
   }
@@ -100,12 +104,14 @@
     font-size: $font-size-sm;
     height: $control-size-sm;
     padding: $control-padding-y-sm $control-padding-x-sm;
+    line-height: $line-height-sm;
   }
 
   &.btn-lg {
     font-size: $font-size-lg;
     height: $control-size-lg;
     padding: $control-padding-y-lg $control-padding-x-lg;
+    line-height: $line-height-lg;
   }
 
   // Button Block
@@ -145,8 +151,8 @@
 
     &:focus,
     &:hover {
-      background: rgba($bg-color, .5);
-      opacity: .95;
+      background: rgba($bg-color, 0.5);
+      opacity: 0.95;
     }
 
     &::before {
@@ -189,5 +195,15 @@
     .btn {
       flex: 1 0 0;
     }
+  }
+}
+
+a.btn {
+  line-height: ($control-size - $unit-2);
+  &.btn-sm {
+    line-height: ($control-size-sm - $unit-1);
+  }
+  &.btn-lg {
+    line-height: ($control-size-lg - $unit-3);
   }
 }

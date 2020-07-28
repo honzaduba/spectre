@@ -8,7 +8,7 @@
   width: 100%;
 
   &.bar-sm {
-    height: $unit-1;
+    height: $unit-2; // $unit-1;
   }
 
   // TODO: attr() support
@@ -38,7 +38,7 @@
 
 // Slider bar
 .bar-slider {
-  height: $border-width-lg;
+  height: $unit-2; // $border-width-lg;
   margin: $layout-spacing 0;
   position: relative;
 
@@ -59,13 +59,19 @@
     height: $unit-3;
     padding: 0;
     position: absolute;
-    right: 0;
     top: 50%;
-    transform: translate(50%, -50%);
     width: $unit-3;
+    &:not(:last-child):first-child {
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+    &:last-child {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
 
     &:active {
-      box-shadow: 0 0 0 .1rem $primary-color;
+      box-shadow: 0 0 0 0.1rem $primary-color;
     }
   }
 }
