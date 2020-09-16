@@ -11,27 +11,31 @@
     margin-top: 0;
 
     a {
-      border-bottom: $border-width-lg solid transparent;
+      border: $border-width solid $border-color;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
       color: inherit;
       display: block;
-      margin: 0 $unit-2 0 0;
-      padding: $unit-2 $unit-1 $unit-2 - $border-width-lg $unit-1;
+      margin: 0 $unit-h (-$border-width) $unit-h;
+      //padding: $unit-2 $unit-1 $unit-2 - $border-width-lg $unit-1;
+      padding: $unit-1 $unit-2;
       text-decoration: none;
+      background-color: $secondary-color-light;
       &:focus,
       &:hover {
         color: $link-color;
-        background-color: $secondary-color-light;
+        background-color: $secondary-color;
       }
     }
     &.active a,
     a.active {
-      border-bottom-color: $primary-color;
       color: $link-color;
-      background-color: $secondary-color;
+      background-color: $bg-color;
+      border-bottom-color: $bg-color;
     }
     &.active a:hover,
     a.active:hover {
-      background-color: $secondary-color-dark;
+      background-color: $bg-color-dark;
     }
 
     &.tab-action {
