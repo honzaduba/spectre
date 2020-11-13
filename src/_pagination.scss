@@ -2,8 +2,8 @@
 .pagination {
   display: flex;
   list-style: none;
-  margin: $unit-1 0;
-  padding: $unit-1 0;
+  margin: 0; // margin: $unit-1 0;
+  padding: 0 $unit-1; // padding: $unit-1 0;
 
   .page-item {
     margin: $unit-1 $unit-o;
