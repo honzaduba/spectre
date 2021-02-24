@@ -9,9 +9,8 @@ h6 {
   color: inherit;
   font-weight: $heading-font-weight;
   line-height: 1.2;
-  //margin-bottom: .5em;
-  margin-bottom: $layout-spacing;
-  margin-top: 0;
+  margin-bottom: $layout-spacing; // .5em;
+  margin-top: $layout-spacing; // 0;
 }
 .h1,
 .h2,

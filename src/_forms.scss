@@ -508,7 +508,7 @@
   .form-select {
     &:disabled,
     &.disabled {
-      background-color: $bg-color-dark; // $bg-color-dark
+      background-color: $bg-color; // $bg-color-dark
       cursor: not-allowed;
       opacity: 1.0;
     }
@@ -524,7 +524,7 @@
     &:disabled,
     &.disabled {
       & + .form-icon {
-        background: $bg-color-dark; // $bg-color-dark
+        background: $bg-color; // $bg-color-dark
         cursor: not-allowed;
         opacity: 1.0;
       }
@@ -536,7 +536,7 @@
       &:disabled,
       &.disabled {
         & + .form-icon::before {
-          background: $bg-color-dark; // $bg-color-light;
+          background: $bg-color; // $bg-color-light;
         }
       }
     }
