@@ -43,13 +43,13 @@
   }
 
   &.modal-lg {
-    .modal-overlay {
-      background: $bg-color-light;
-    }
+    // .modal-overlay {
+    //   background: $bg-color-light;
+    // }
 
     .modal-container {
-      box-shadow: none;
-      max-width: $control-width-lg;
+      // box-shadow: none;
+      max-width: 90%; // $control-width-lg;
     }
   }
 }
@@ -60,7 +60,7 @@
   border-radius: $border-radius;
   display: flex;
   flex-direction: column;
-  max-height: 75vh;
+  max-height: 90vh; //75vh;
   max-width: $control-width-md;
   padding: 0 $unit-4;
   width: 100%;
