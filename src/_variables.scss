@@ -33,6 +33,9 @@ $bg-color: darken($light-color, 2%) !default; // lighten($dark-color, 75%) !defa
 $bg-color-dark: darken($light-color, 10%) !default; // darken($bg-color, 3%) !default;
 $bg-color-light: $light-color !default;
 
+$btn-color-light: #ececec;
+$btn-color-dark: #cecece;
+
 // Control colors
 $success-color: #32b643 !default;
 $warning-color: #ffb700 !default;

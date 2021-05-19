@@ -86,6 +86,14 @@
     @include button-variant($error-color);
   }
 
+  &.btn-dark {
+    @include button-variant($btn-color-dark, $body-font-color);
+  }
+
+  &.btn-light {
+    @include button-variant($btn-color-light, $body-font-color);
+  }
+
   // Button Link
   &.btn-link {
     background: transparent;
